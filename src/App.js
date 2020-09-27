@@ -98,7 +98,7 @@ function App() {
 		},
   ];
 
-//test
+
   return (
     <>
       <HeroBlock header = "Качество атмосферного воздуха и здоровье"
