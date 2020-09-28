@@ -13,11 +13,21 @@ import shid_logo from './assets/shid_emozhl_logo.svg';
 
 function App() {
 
+  const isMobile = window.matchMedia(`(max-width: 414px)`).matches;
+
+  let sponsor_logo_arr = [];
   // for HeroBlock
-  const sponsor_logo_arr = [
-    shid_logo,
-    itn_logo,
-    gc_logo,
+  if (!isMobile) 
+    sponsor_logo_arr = [
+      shid_logo,
+      itn_logo,
+      gc_logo,
+  ];
+  else 
+  sponsor_logo_arr = [
+    require("./assets/HeroMobile/shid_emozhl_logo_mob.svg"),
+    require("./assets/HeroMobile/itn_mix_mob.svg"),
+    require("./assets/HeroMobile/gc_logo_mob.svg"),
   ];
 
   const hero_links = [
