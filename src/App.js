@@ -11,12 +11,15 @@ import gc_logo from './assets/gc_logo.svg';
 import itn_logo from './assets/itn_mix.svg';
 import shid_logo from './assets/shid_emozhl_logo.svg';
 
+
+
 function App() {
 
   const isMobile = window.matchMedia(`(max-width: 414px)`).matches;
 
-  let sponsor_logo_arr = [];
   // for HeroBlock
+  let sponsor_logo_arr = [];
+  
   if (!isMobile) 
     sponsor_logo_arr = [
       shid_logo,
