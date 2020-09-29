@@ -24,7 +24,7 @@ const SectorItem = ({sector, number}) => {
 		    onMouseEnter={() => toggleToolTip(true)} // mouse over element
 			onMouseLeave={() => toggleToolTip(false)}
 
-			// onMouseEnter={() => toggleMobileTooltip(true)} //for Mobile
+			onClick={() => toggleMobileTooltip(true)} //for Mobile
 
 			    style={{
 					 background: `url(${sector.img_url}) center no-repeat`,
@@ -41,19 +41,14 @@ const SectorItem = ({sector, number}) => {
 
 			{
 				isMobile && isMobileTooltipShowing &&
-				<div className={`politics-mobile-tooltip ${isMobile ? "politics-mobile-tooltip-show" : ""}`}>
+				<div className={`politics-mobile-tooltip ${isMobileTooltipShowing ? "politics-mobile-tooltip-show" : ""}`}>
 					
 					<div className="politics-mobile-tooltip-navbar">
-                      <div className="politics-mobile-tooltip-navbar-close " onClick={() => toggleMobileTooltip(false)}>
+                      <div className="politics-mobile-tooltip-navbar-close" onClick={() => toggleMobileTooltip(false)}>
                         <div className="politics-mobile-tooltip-navbar-close1"></div>
                         <div className="politics-mobile-tooltip-navbar-close2"></div>
                         <div className="politics-mobile-tooltip-navbar-close3"></div>
                       </div>
-                      {/* <div className="burger">
-                        <div className="burger-bar"></div>
-                        <div className="burger-bar"></div>
-                        <div className="burger-bar"></div>
-                      </div> */}
                     </div>
 
 					{sector.tooltip}
