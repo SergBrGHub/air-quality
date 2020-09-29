@@ -100,6 +100,7 @@
   } //hero
 
   .burger {
+     padding: 37px 0;
 
     &-bar {
       width: 40px;
@@ -131,6 +132,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 0 20px 0 20px;
 
         &-close1 {
           width: 40px;
@@ -158,22 +160,33 @@
       }
       
       &-links {
-        margin: 100px 0 0 0;
+        margin: 185px 0 0 0;
 
         &-item {
           display: block;
           text-align: center;
           font-style: normal;
           font-weight: normal;
-          font-size: 19px;
-          line-height: 22px;
+          font-size: 23px;
+          line-height: 27px;
           color: var(--white);
           text-decoration: none;
+          margin-bottom: 39px;
+
+          &:last-child {
+            margin-bottom: 266px;
+          }
         }
       }
 
       &-text {
-
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 15px;
+        color: var(--white);
+        margin-bottom: 31px;
+        text-align: center;
       }
     }
   }
