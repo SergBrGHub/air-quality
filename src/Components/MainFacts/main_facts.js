@@ -12,7 +12,9 @@ import './main_facts.scss'
 SwiperCore.use([Navigation, Pagination])
 
 const MainFacts = ({header, slides}) => {
-    const slidesitem = slides.map((item) => <SwiperSlide key={item.id}><SlideFactsItem item={item}/></SwiperSlide>);
+	const slidesitem = slides.map((item) => <SwiperSlide key={item.id}><SlideFactsItem item={item}/></SwiperSlide>);
+	
+	const isMobile = window.matchMedia(`(max-width: 414px)`).matches;
 
     return (
         <section className="mainfacts container" id="mainfacts">
@@ -30,9 +32,9 @@ const MainFacts = ({header, slides}) => {
 						return `<span class="mainfacts-pagination-bullet ${className}"></span>`;
 					}
 				}}     
-				slidesPerView={3}
-				slidesPerGroup={3}
-				spaceBetween={40}
+				slidesPerView={ !isMobile ? 3 : 1}
+				slidesPerGroup={ !isMobile ? 3 : 1}
+				// spaceBetween={40}
 				// centeredSlides={true}
 			>
 				{slidesitem}

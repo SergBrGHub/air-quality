@@ -85,3 +85,83 @@
     opacity: 1;
   }
 }
+
+
+// Mobile
+@media only screen and (max-width: 414px) {
+  .politics {
+
+    &-list {
+      flex-direction: column;
+
+      &-item {
+        width: auto;
+        // height: 240px;
+        // display: flex;
+        // align-items: center;
+        margin-bottom: 30px;
+      }
+    }
+
+    &-mobile-tooltip {
+      position: absolute;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      color: var(--black);
+      // left: 100%;
+      width: 400px;
+      // height: 400px;        
+      // appearance: none;
+      pointer-events: none;
+      background-color: var(--tooltip-bg);
+      // padding: 16px 16px 16px 75px;
+      z-index: 50;
+      transform: translateX(-100%);
+      // animation: fadeIn 0.4s ease-in-out;
+      // top: 250px;
+      
+
+      &-show {
+        transform: translateX(0);
+        // left: initial;
+        // right: 100%;
+      }
+
+      &-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-close {
+          z-index: 150;
+        }
+
+        &-close1 {
+          width: 40px;
+          height: 0px;
+          border: 2px solid var(--black);
+          transform: rotate(45deg) translate(14px, 12px);
+          margin: 0 0 10px 0;
+        }
+        
+        &-close2 {
+          width: 40px;
+          height: 0px;
+          border: 2px solid var(--black);
+          opacity: 0;
+          margin: 0 0 10px 0;
+        }
+  
+        &-close3 {
+          width: 40px;
+          height: 0px;
+          border: 2px solid var(--black);
+          transform: rotate(-45deg) translate(7px, -6px);
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+}

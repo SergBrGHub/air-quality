@@ -27,7 +27,7 @@ const AirQuality = () => {
 	});
 	
 	return (
-		<section className={'air-q container'} id="idxquality">
+		<section className="air-q container" id="idxquality">
 			<h2 className="air-q-header">Индекс качества воздуха в режиме реального времени</h2>
 			<div className="air-q-map" ref={mapContainer}/>
 			<p className="air-q-text">Для того чтобы узнать уровень загрязнения атмосферного воздуха

@@ -9,6 +9,7 @@
   --facts-slide-bullet: #b78a3f;
   --tooltip-bg: #dadada;
   --yellow: #EDE852;
+  --body-bg: #737373;
 }
 
 * {
@@ -16,7 +17,7 @@
 }
 
 body {
-  background-color: #737373;
+  background-color: var(--body-bg);
 }
 
 .container {

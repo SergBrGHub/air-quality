@@ -23,3 +23,16 @@
     color: var(--white);
   }
 }
+
+// Mobile
+@media only screen and (max-width: 414px) {
+  .air-q {
+
+    &-map {
+      height: 560px;
+      width: 350px;
+      margin: 42px auto;
+    }
+
+  }
+}
