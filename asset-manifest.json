@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/air-quality/static/css/main.0be1c8af.chunk.css",
+    "main.js": "/air-quality/static/js/main.2ff23971.chunk.js",
+    "main.js.map": "/air-quality/static/js/main.2ff23971.chunk.js.map",
+    "runtime-main.js": "/air-quality/static/js/runtime-main.2c0b8cd0.js",
+    "runtime-main.js.map": "/air-quality/static/js/runtime-main.2c0b8cd0.js.map",
+    "static/css/2.e0686c58.chunk.css": "/air-quality/static/css/2.e0686c58.chunk.css",
+    "static/js/2.c844eb71.chunk.js": "/air-quality/static/js/2.c844eb71.chunk.js",
+    "static/js/2.c844eb71.chunk.js.map": "/air-quality/static/js/2.c844eb71.chunk.js.map",
+    "index.html": "/air-quality/index.html",
+    "precache-manifest.921aee504f21736322a83dfe9b16e9e2.js": "/air-quality/precache-manifest.921aee504f21736322a83dfe9b16e9e2.js",
+    "service-worker.js": "/air-quality/service-worker.js",
+    "static/css/2.e0686c58.chunk.css.map": "/air-quality/static/css/2.e0686c58.chunk.css.map",
+    "static/css/main.0be1c8af.chunk.css.map": "/air-quality/static/css/main.0be1c8af.chunk.css.map",
+    "static/js/2.c844eb71.chunk.js.LICENSE.txt": "/air-quality/static/js/2.c844eb71.chunk.js.LICENSE.txt",
+    "static/media/gc_logo.svg": "/air-quality/static/media/gc_logo.0662d9de.svg",
+    "static/media/gc_logo_mob.svg": "/air-quality/static/media/gc_logo_mob.4783cc43.svg",
+    "static/media/hero_block.scss": "/air-quality/static/media/hero_bg.b236af76.jpg",
+    "static/media/itn_mix.svg": "/air-quality/static/media/itn_mix.2f311a05.svg",
+    "static/media/itn_mix_mob.svg": "/air-quality/static/media/itn_mix_mob.780cc280.svg",
+    "static/media/politics_1.jpg": "/air-quality/static/media/politics_1.3d66b58c.jpg",
+    "static/media/politics_2.jpg": "/air-quality/static/media/politics_2.fb06d4dd.jpg",
+    "static/media/politics_3.jpg": "/air-quality/static/media/politics_3.a3fe3aa1.jpg",
+    "static/media/politics_4.jpg": "/air-quality/static/media/politics_4.17b056bd.jpg",
+    "static/media/politics_5.jpg": "/air-quality/static/media/politics_5.1d9ae9e9.jpg",
+    "static/media/politics_6.jpg": "/air-quality/static/media/politics_6.19cb6755.jpg",
+    "static/media/shid_emozhl_logo.svg": "/air-quality/static/media/shid_emozhl_logo.341a487c.svg",
+    "static/media/shid_emozhl_logo_mob.svg": "/air-quality/static/media/shid_emozhl_logo_mob.63671d59.svg",
+    "static/media/slide-1.jpg": "/air-quality/static/media/slide-1.7e1db0da.jpg",
+    "static/media/slide-2.jpg": "/air-quality/static/media/slide-2.12a25e24.jpg",
+    "static/media/slide-3.jpg": "/air-quality/static/media/slide-3.638ec227.jpg",
+    "static/media/slide-4.jpg": "/air-quality/static/media/slide-4.8a21e8b7.jpg",
+    "static/media/slide-5.jpg": "/air-quality/static/media/slide-5.bb9f49bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c0b8cd0.js",
+    "static/css/2.e0686c58.chunk.css",
+    "static/js/2.c844eb71.chunk.js",
+    "static/css/main.0be1c8af.chunk.css",
+    "static/js/main.2ff23971.chunk.js"
+  ]
+}
