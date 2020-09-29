@@ -90,16 +90,32 @@
 // Mobile
 @media only screen and (max-width: 414px) {
   .politics {
+    padding: 70px 0;
+
+    &-header {
+      font-size: 27px;
+      line-height: 32px;
+    }
+
+    &-subheader {
+      display: none;
+    }
 
     &-list {
       flex-direction: column;
 
       &-item {
         width: auto;
-        // height: 240px;
-        // display: flex;
-        // align-items: center;
-        margin-bottom: 30px;
+        margin:13px 17px 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-name {
+          font-size: 23px;
+          line-height: 27px;
+        }
       }
     }
 
