@@ -68,5 +68,36 @@
 
 // Mobile
 @media only screen and (max-width: 414px) {
+  .mainfacts {
+    padding: 70px 60px;
+
+    &-header {
+      font-size: 27px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+
+    &-slide {
+      &-capt {
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 21px;
+      }
+    }
+
+    &-pagination {
+      margin-top: 21px;
   
+      &-bullet {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 16px;
+        background-color: transparent;
+        border: 2px solid var(--facts-slide-bullet);
+        opacity: 1;
+        transition: 0.3s background-color;
+      }
+    }
+  }
 }
