@@ -16,47 +16,65 @@ const SectorItem = ({sector, number}) => {
 
     const toggleMobileTooltip = (newValue) => {
         setMobileTooltipShowing(newValue);
-         console.log('click ok');
+        //  console.log('click ok');
 	}
 	
-	return (
-        <div className="politics-list-item"
-		    onMouseEnter={() => toggleToolTip(true)} // mouse over element
-			onMouseLeave={() => toggleToolTip(false)}
+	if (isMobile) {
+		return (
+			<div className="politics-mobile-tooltip-main">
+				{
+					isMobile && isMobileTooltipShowing &&
+					<div className={`politics-mobile-tooltip ${isMobileTooltipShowing ? "politics-mobile-tooltip-show" : ""}`}>
+						
+						<div className="politics-mobile-tooltip-navbar">
+						<div className="politics-mobile-tooltip-navbar-close" onClick={() => toggleMobileTooltip(false)}>
+							<div className="politics-mobile-tooltip-navbar-close1"></div>
+							<div className="politics-mobile-tooltip-navbar-close2"></div>
+							<div className="politics-mobile-tooltip-navbar-close3"></div>
+						</div>
+						</div>
+						<p className="politics-mobile-tooltip-header">{sector.name}</p>
+						<div className="politics-mobile-tooltip-content">{sector.tooltip}</div>
+					</div>
+				}
+				<div className="politics-list-item"
+						onClick={() => toggleMobileTooltip(true)} //for Mobile
+						style={{
+							background: `url(${sector.img_url}) center no-repeat`,
+							backgroundSize: 'cover'
+							}}>
 
-			onClick={() => toggleMobileTooltip(true)} //for Mobile
+					<p className="politics-list-item-name">{sector.name}</p>
 
-			    style={{
-					 background: `url(${sector.img_url}) center no-repeat`,
-                     backgroundSize: 'cover'
-		            }}>
-
-		<p className="politics-list-item-name">{sector.name}</p>
-
-			{
-				!isMobile && isToolTipShowing && <p className={`politics-list-item-tooltip ${ isDirectionSwitched ? "politics-list-item-tooltip-switched" : "" }`}>
-					{sector.tooltip}
-				</p>
-			}
-
-			{
-				isMobile && isMobileTooltipShowing &&
-				<div className={`politics-mobile-tooltip ${isMobileTooltipShowing ? "politics-mobile-tooltip-show" : ""}`}>
-					
-					<div className="politics-mobile-tooltip-navbar">
-                      <div className="politics-mobile-tooltip-navbar-close" onClick={() => toggleMobileTooltip(false)}>
-                        <div className="politics-mobile-tooltip-navbar-close1"></div>
-                        <div className="politics-mobile-tooltip-navbar-close2"></div>
-                        <div className="politics-mobile-tooltip-navbar-close3"></div>
-                      </div>
-                    </div>
-
-					{sector.tooltip}
+					{/* {
+						!isMobile && isToolTipShowing && <p className={`politics-list-item-tooltip ${ isDirectionSwitched ? "politics-list-item-tooltip-switched" : "" }`}>
+							{sector.tooltip}
+						</p>
+					} */}
 				</div>
-			}
-		</div>
-		
-	);
+			</div>
+		);
+	}
+	else {
+		return (
+				<div className="politics-list-item"
+						onMouseEnter={() => toggleToolTip(true)} // mouse over element
+						onMouseLeave={() => toggleToolTip(false)}
+						style={{
+							background: `url(${sector.img_url}) center no-repeat`,
+							backgroundSize: 'cover'
+							}}>
+
+					<p className="politics-list-item-name">{sector.name}</p>
+
+					{
+						!isMobile && isToolTipShowing && <p className={`politics-list-item-tooltip ${ isDirectionSwitched ? "politics-list-item-tooltip-switched" : "" }`}>
+							{sector.tooltip}
+						</p>
+					}
+				</div>
+		);
+	};
 };
 
 export default SectorItem;

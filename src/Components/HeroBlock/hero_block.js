@@ -72,7 +72,7 @@ const HeroBlock = ({header, links, sponsor_logo}) => {
 
                 <h1 className="hero-header">{header}</h1>
 
-                <a className="hero-button" href="#id">Отследить</a>
+                <a className="hero-button" href="#idxquality">Отследить</a>
   
             </div>
         </section>
