@@ -106,7 +106,7 @@
 
       &-item {
         width: auto;
-        margin:13px 17px 18px;
+        margin:30px 17px 18px;
 
         &:last-child {
           margin-bottom: 0;
@@ -130,7 +130,7 @@
       z-index: 50;
       transform: translateX(-100%);
       animation: fadeIn 0.2s ease-in-out;
-      top: 10px;
+      top: 22px;
       left: 17px;
 
       &-show {
