@@ -34,7 +34,7 @@ const MainFacts = ({header, slides}) => {
 				}}     
 				slidesPerView={ !isMobile ? 3 : 1}
 				slidesPerGroup={ !isMobile ? 3 : 1}
-				// spaceBetween={40}
+				spaceBetween={40}
 				// centeredSlides={true}
 			>
 				{slidesitem}

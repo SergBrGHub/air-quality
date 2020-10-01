@@ -71,9 +71,16 @@ const HeroBlock = ({header, links, sponsor_logo}) => {
                 : null }
 
                 <h1 className="hero-header">{header}</h1>
+                
+                <div>
+                  <a className="hero-button" href="#idxquality">Отследить</a>
+                </div>
 
-                <a className="hero-button" href="#idxquality">Отследить</a>
-  
+                { isMobile &&
+                  <div className="hero-block">
+                    <p><i className="hero-block-down"></i></p>
+                  </div>
+                }
             </div>
         </section>
     );

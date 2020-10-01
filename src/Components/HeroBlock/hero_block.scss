@@ -70,7 +70,7 @@
 @media only screen and (max-width: 414px) {
 
   .hero {
-    padding-bottom: 75px;
+    padding-bottom: 0;
 
     &-sponsor-block {
       &-item {
@@ -96,6 +96,24 @@
       display: inline-block;
       padding: 24px 137.5px;
       margin: 267px 0 0 0;
+    }
+
+    // Arrow down
+    &-block {
+      padding: 15px 0 14px;
+      text-align: center;
+
+      &-down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+
+      i {
+        border: solid var(--white);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 20px;
+      }
     }
   } //hero
 
